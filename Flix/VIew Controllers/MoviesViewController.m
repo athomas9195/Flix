@@ -90,12 +90,18 @@
     //poster view
     NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
     NSString *posterURLString = movie[@"poster_path"];
-    NSString *fullPosterURLString = [baseURLString stringByAppendingString:posterURLString];
     
-    NSURL *posterURL = [NSURL URLWithString:fullPosterURLString];
-    
-    [cell.posterView setImageWithURL:posterURL];  
-    
+    if (posterURLString.length != 0) {
+        NSString *fullPosterURLString = [baseURLString stringByAppendingString:posterURLString];
+        
+        NSURL *posterURL = [NSURL URLWithString:fullPosterURLString];
+        
+        cell.posterView.image = nil;
+        [cell.posterView setImageWithURL:posterURL];
+        
+    }
+     
+
     
    // cell.textLabel.text = movie[@"title"];
     
