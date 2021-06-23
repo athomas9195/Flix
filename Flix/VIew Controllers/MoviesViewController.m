@@ -50,7 +50,7 @@
                // TODO: Reload your table view data
            }
        }];
-    [task resume]; 
+    [task resume];
 }
 
 - (void) didReceiveMemoryWarning {
@@ -66,11 +66,22 @@
     return 20;
 }
 
+
+
+
+
+
+
+
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    
+    
+    
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MovieCell"];
     
     NSDictionary *movie = self.movies[indexPath.row];
-    cell.textLabel.text = movie[@"title"];
+   // cell.textLabel.text = movie[@"title"];
     
     return cell;
 }
