@@ -50,7 +50,7 @@
                // TODO: Reload your table view data
            }
        }];
-    [task resume];
+    [task resume]; 
 }
 
 - (void) didReceiveMemoryWarning {
