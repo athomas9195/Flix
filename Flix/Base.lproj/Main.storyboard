@@ -28,7 +28,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="158"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACQ-FG-l9K">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACQ-FG-l9K">
                                                     <rect key="frame" x="0.0" y="0.0" width="119" height="158"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.75155979390000005" green="0.88978505129999996" blue="0.78816401960000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
