@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="71" y="114"/>
         </scene>
-        <!--View Controller-->
+        <!--Movies View Controller-->
         <scene sceneID="CPP-Sp-r61">
             <objects>
-                <viewController id="C8M-cK-h5E" sceneMemberID="viewController">
+                <viewController id="C8M-cK-h5E" customClass="MoviesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HPh-Rt-lL3" customClass="Movies">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

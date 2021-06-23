@@ -116,8 +116,6 @@
 				0BABE79E2683A0F30064F87D /* LaunchScreen.storyboard */,
 				0BABE7A12683A0F30064F87D /* Info.plist */,
 				0BABE7A22683A0F30064F87D /* main.m */,
-				0BABE7CB2683B16B0064F87D /* MoviesViewController.h */,
-				0BABE7CC2683B16B0064F87D /* MoviesViewController.m */,
 			);
 			path = Flix;
 			sourceTree = "<group>";
@@ -143,6 +141,8 @@
 		0BABE7C82683ADC60064F87D /* VIew Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0BABE7CB2683B16B0064F87D /* MoviesViewController.h */,
+				0BABE7CC2683B16B0064F87D /* MoviesViewController.m */,
 			);
 			path = "VIew Controllers";
 			sourceTree = "<group>";
