@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B51C39B2683D5E400651F02 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B51C39A2683D5E400651F02 /* MovieCell.m */; };
 		0BABE7922683A0F10064F87D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABE7912683A0F10064F87D /* AppDelegate.m */; };
 		0BABE7952683A0F10064F87D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABE7942683A0F10064F87D /* SceneDelegate.m */; };
 		0BABE79B2683A0F10064F87D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BABE7992683A0F10064F87D /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B51C3992683D5E400651F02 /* MovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		0B51C39A2683D5E400651F02 /* MovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		0BABE78D2683A0F10064F87D /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BABE7902683A0F10064F87D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0BABE7912683A0F10064F87D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 		0BABE7C92683ADCD0064F87D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0B51C3992683D5E400651F02 /* MovieCell.h */,
+				0B51C39A2683D5E400651F02 /* MovieCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BABE7922683A0F10064F87D /* AppDelegate.m in Sources */,
+				0B51C39B2683D5E400651F02 /* MovieCell.m in Sources */,
 				0BABE7A32683A0F30064F87D /* main.m in Sources */,
 				0BABE7952683A0F10064F87D /* SceneDelegate.m in Sources */,
 				0BABE7CD2683B16B0064F87D /* MoviesViewController.m in Sources */,
