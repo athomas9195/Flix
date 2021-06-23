@@ -7,15 +7,22 @@
 
 #import "MoviesViewController.h"
 
-@interface MoviesViewController ()
+@interface MoviesViewController () <UITableViewDataSource, UITableViewDelegate>
 
-@end
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic, strong) NSArray *movies;
+
+@end 
 
 @implementation MoviesViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self; 
     
     NSURL *url = [NSURL URLWithString:@"https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
