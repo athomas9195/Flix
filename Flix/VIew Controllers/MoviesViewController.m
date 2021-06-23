@@ -14,7 +14,7 @@
 @property (nonatomic, strong) NSArray *movies;
 
 @end 
-
+ 
 @implementation MoviesViewController
 
 - (void)viewDidLoad {
@@ -43,6 +43,8 @@
                    NSLog(@"%@", movie[@"title"]);
                }
 
+               [self.tableView reloadData];
+
                // TODO: Get the array of movies
                // TODO: Store the movies in a property to use elsewhere
                // TODO: Reload your table view data
@@ -55,26 +57,48 @@
     [super didReceiveMemoryWarning];
 }
 
-- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
+
+
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 20;
 }
 
-- (UITableViewCell*)tableView:(UITableView *)tableView cellforRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] init]
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"row: %d, section %d", indexPath.row, indexPath.section];
+    NSDictionary *movie = self.movies[indexPath.row];
+    cell.textLabel.text = movie[@"title"];
     
-    return cell; 
+    return cell;
 }
+
+
+
+
+
+
+
+//
+//- (UITableViewCell*)tableView:(UITableView *)tableView cellforRowAtIndexPath:(NSIndexPath *)indexPath {
+//    UITableViewCell *cell = [[UITableViewCell alloc] init];
+//
+//    NSDictionary *movie = self.movies[indexPath.row];
+//    cell.textLabel.text = movie[@"title"];
+//
+//    return cell;
+//}
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
