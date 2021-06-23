@@ -22,7 +22,7 @@
     // Do any additional setup after loading the view.
     
     self.tableView.dataSource = self;
-    self.tableView.delegate = self; 
+    self.tableView.delegate = self;
     
     NSURL *url = [NSURL URLWithString:@"https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
@@ -37,9 +37,9 @@
                NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
                
                NSLog(@"%@", dataDictionary);
-               NSArray *movies = dataDictionary[@"results"];
+               self.movies = dataDictionary[@"results"];
                
-               for (NSDictionary *movie in movies) {
+               for (NSDictionary *movie in self.movies) {
                    NSLog(@"%@", movie[@"title"]);
                }
 
@@ -49,6 +49,22 @@
            }
        }];
     [task resume];
+}
+
+- (void) didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 20;
+}
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellforRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [[UITableViewCell alloc] init]
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"row: %d, section %d", indexPath.row, indexPath.section];
+    
+    return cell; 
 }
 
 /*
