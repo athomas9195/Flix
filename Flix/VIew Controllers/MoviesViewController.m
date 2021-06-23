@@ -29,11 +29,11 @@
            else {
                NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
                
-               NSLog(@"%", dataDictionary);
+               NSLog(@"%@", dataDictionary);
                NSArray *movies = dataDictionary[@"results"];
                
                for (NSDictionary *movie in movies) {
-                   NSLog(@"%@", movie[@"title"]); 
+                   NSLog(@"%@", movie[@"title"]);
                }
 
                // TODO: Get the array of movies
