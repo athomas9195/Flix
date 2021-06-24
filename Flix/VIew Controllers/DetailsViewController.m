@@ -41,14 +41,18 @@
     NSString *backdropURLString = self.movie[@"backdrop_path"];
     
     if (backdropURLString.length != 0) {
-        NSString *fullBackdropURLString = [baseURLString stringByAppendingString:posterURLString];
+        NSString *fullBackdropURLString = [baseURLString stringByAppendingString:backdropURLString];
         
         NSURL *backdropURL = [NSURL URLWithString:fullBackdropURLString];
         [self.backdropView setImageWithURL:backdropURL];
     }
     
     self.titleLabel.text = self.movie[@"title"];
-    self.synopsisLabel.text = self.movie[@"overview"]; 
+    self.synopsisLabel.text = self.movie[@"overview"];
+    
+    //adjust text box sizes
+    [self.titleLabel sizeToFit];
+    [self.synopsisLabel sizeToFit]; 
 }
 
 /*
