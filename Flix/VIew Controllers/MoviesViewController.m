@@ -12,9 +12,11 @@
 
 @interface MoviesViewController () <UITableViewDataSource, UITableViewDelegate>
 
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) NSArray *movies;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 //refresh control
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
@@ -24,23 +26,43 @@
 @implementation MoviesViewController
 
 - (void)viewDidLoad {
+
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
+    [self startSpinning];
+
+//    for(int i=0; i<10000; i++) {
+//        [self fetchMovies];
+//    }
     [self fetchMovies];
+
     
     //refresh control
     self.refreshControl = [[UIRefreshControl alloc] init];
     //programmatic code for ctrl drag
     [self.refreshControl addTarget:self action:@selector(fetchMovies) forControlEvents:UIControlEventValueChanged];
     [self.tableView insertSubview:self.refreshControl atIndex:0];
+   
+    
+    
+}
+
+-(void) startSpinning {
+    //activity indicator
+    [self.activityIndicator startAnimating];
 }
 
 
 -(void) fetchMovies {
+
+
+    
+    
     
     NSURL *url = [NSURL URLWithString:@"https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
@@ -68,10 +90,13 @@
                // TODO: Reload your table view data
            }
         
-        [self.refreshControl endRefreshing];
+        [self.refreshControl endRefreshing]; 
        }];
     [task resume];
     
+    // Stop the activity indicator
+    // Hides automatically if "Hides When Stopped" is enabled
+    //[self.activityIndicator stopAnimating];
 }
 
 
