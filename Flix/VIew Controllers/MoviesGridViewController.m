@@ -35,8 +35,8 @@
     
     
     
-    layout.minimumLineSpacing = 5;
-    layout.minimumInteritemSpacing =5;
+    layout.minimumLineSpacing = 0;
+    layout.minimumInteritemSpacing =0; 
     
     CGFloat postersPerLine =2;
     CGFloat itemWidth = (self.collectionView.frame.size.width- layout.minimumInteritemSpacing * (postersPerLine-1)) / postersPerLine;
