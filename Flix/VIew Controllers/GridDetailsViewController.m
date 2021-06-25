@@ -32,7 +32,7 @@
         NSURL *posterURL = [NSURL URLWithString:fullPosterURLString];
         
         [self.posterView setImageWithURL:posterURL];
-        
+         
     }
     
        
