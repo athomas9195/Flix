@@ -36,7 +36,7 @@
     
     
     layout.minimumLineSpacing = 0;
-    layout.minimumInteritemSpacing =0; 
+    layout.minimumInteritemSpacing =0;
     
     CGFloat postersPerLine =2;
     CGFloat itemWidth = (self.collectionView.frame.size.width- layout.minimumInteritemSpacing * (postersPerLine-1)) / postersPerLine;
@@ -144,6 +144,8 @@
     
     NSDictionary *movie = self.movies[indexPath.item];
     
+    cell.ratingLabel.text = [NSString stringWithFormat:@"%@", movie[@"vote_average"]];
+    
     NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
     NSString *posterURLString = movie[@"poster_path"];
     
@@ -153,7 +155,7 @@
         NSURL *posterURL = [NSURL URLWithString:fullPosterURLString];
         
         cell.posterView.image = nil;
-        [cell.posterView setImageWithURL:posterURL];
+        [cell.posterView setImageWithURL:posterURL]; 
     
 
     }
