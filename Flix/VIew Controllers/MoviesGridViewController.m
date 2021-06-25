@@ -24,6 +24,8 @@
     
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
+    
+    [self fetchMovies];
 }
 
 
