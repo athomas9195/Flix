@@ -32,17 +32,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
+    
+    
+    
     [self.view bringSubviewToFront:self.activityIndicator];
     [self.activityIndicator startAnimating];
+    [self.view addSubview:self.activityIndicator];
 
+    
+    
+    
+    
+    
+    
+    
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
     [self fetchMovies];
-
-//    for (int i =0; i<10000 ; i++) {
-//        [self fetchMovies];
-//    }
     
     //refresh control
     self.refreshControl = [[UIRefreshControl alloc] init];
@@ -50,9 +58,15 @@
     [self.refreshControl addTarget:self action:@selector(fetchMovies) forControlEvents:UIControlEventValueChanged];
     [self.tableView insertSubview:self.refreshControl atIndex:0];
     
-
+    
    
 }
+
+
+
+//    for (int i =0; i<10000 ; i++) {
+//        [self fetchMovies];
+//    }
 
 //-(void) startSpinning {
 //    //activity indicator
@@ -93,12 +107,13 @@
            }
         
         [self.refreshControl endRefreshing];
+        
+        // Stop the activity indicator
+        // Hides automatically if "Hides When Stopped" is enabled
+        [self.activityIndicator stopAnimating];
        }];
     [task resume];
     
-    // Stop the activity indicator
-    // Hides automatically if "Hides When Stopped" is enabled
-    [self.activityIndicator stopAnimating];
 }
 
 
