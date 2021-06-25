@@ -6,6 +6,7 @@
 //
 
 #import "MoviesGridViewController.h"
+#import "MovieCollectionCell.h"
 
 @interface MoviesGridViewController () <UICollectionViewDataSource, UICollisionBehaviorDelegate>
 
@@ -100,9 +101,12 @@
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
+    MovieCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MovieCollectionCell" forIndexPath:indexPath];
+    
+    return cell;
 }
 
-- (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+- (NSInteger)collectionView:(nonnull UICollectionView *)collectionView  numberOfItemsInSection:(NSInteger)section {
     return self.movies.count;
 }
 
