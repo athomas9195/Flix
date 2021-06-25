@@ -284,6 +284,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DVC-Xr-ihG">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.066439218820000007" green="0.1116558537" blue="0.21587651969999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -302,6 +303,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZaB-VB-MYE">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.066439218820000007" green="0.1116558537" blue="0.21587651969999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <connections>
                         <segue destination="4KN-kW-yD5" kind="relationship" relationship="rootViewController" id="luA-in-11U"/>
