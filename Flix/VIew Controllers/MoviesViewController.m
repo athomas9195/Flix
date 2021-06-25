@@ -25,37 +25,39 @@
  
 @implementation MoviesViewController
 
+
 - (void)viewDidLoad {
 
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.view bringSubviewToFront:self.activityIndicator];
+    [self.activityIndicator startAnimating];
 
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
-    [self startSpinning];
-
-//    for(int i=0; i<10000; i++) {
-//        [self fetchMovies];
-//    }
     [self fetchMovies];
 
+//    for (int i =0; i<10000 ; i++) {
+//        [self fetchMovies];
+//    }
     
     //refresh control
     self.refreshControl = [[UIRefreshControl alloc] init];
     //programmatic code for ctrl drag
     [self.refreshControl addTarget:self action:@selector(fetchMovies) forControlEvents:UIControlEventValueChanged];
     [self.tableView insertSubview:self.refreshControl atIndex:0];
+    
+
    
-    
-    
 }
 
--(void) startSpinning {
-    //activity indicator
-    [self.activityIndicator startAnimating];
-}
+//-(void) startSpinning {
+//    //activity indicator
+//    [self.activityIndicator startAnimating];
+//}
 
 
 -(void) fetchMovies {
@@ -90,13 +92,13 @@
                // TODO: Reload your table view data
            }
         
-        [self.refreshControl endRefreshing]; 
+        [self.refreshControl endRefreshing];
        }];
     [task resume];
     
     // Stop the activity indicator
     // Hides automatically if "Hides When Stopped" is enabled
-    //[self.activityIndicator stopAnimating];
+    [self.activityIndicator stopAnimating];
 }
 
 
