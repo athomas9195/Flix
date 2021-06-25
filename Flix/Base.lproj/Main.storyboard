@@ -185,10 +185,10 @@
             </objects>
             <point key="canvasLocation" x="71" y="1690"/>
         </scene>
-        <!--View Controller-->
+        <!--Grid Details View Controller-->
         <scene sceneID="Fu5-WF-ZMG">
             <objects>
-                <viewController id="M6v-SU-tnb" sceneMemberID="viewController">
+                <viewController id="M6v-SU-tnb" customClass="GridDetailsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YT8-cV-65n">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,6 +228,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="6rV-TP-SpF"/>
+                    <connections>
+                        <outlet property="backdropView" destination="Aue-0q-hc3" id="RJi-WS-NB5"/>
+                        <outlet property="posterView" destination="kdI-4V-U1u" id="URI-O6-Zta"/>
+                        <outlet property="synopsisLabel" destination="ode-6x-6nc" id="4em-eB-6cd"/>
+                        <outlet property="titleLabel" destination="dIV-38-CQ4" id="ejo-WA-2Oo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KF7-AC-ggc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
