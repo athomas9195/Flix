@@ -202,19 +202,8 @@
     }
     
     
-    
-    
-    
-    
-    //rating view
-    
-    if (posterURLString.length != 0) {
-        
-        cell.ratingView.image = nil;
-        [cell.ratingView setImage:<#(UIImage * _Nullable)#>];
-        
-    }
-     
+ 
+      
 
     
    // cell.textLabel.text = movie[@"title"];
