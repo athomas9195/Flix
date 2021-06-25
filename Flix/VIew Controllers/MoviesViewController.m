@@ -184,7 +184,8 @@
     NSDictionary *movie = self.movies[indexPath.row];
     cell.titleLabel.text = movie[@"title"];
     cell.synposisLabel.text = movie[@"overview"];
-    cell.ratingLabel.text = movie[@"vote_average"];
+    
+   cell.ratingLabel.text = [NSString stringWithFormat:@"%@", movie[@"vote_average"]];
     
     
     //poster view
@@ -201,12 +202,7 @@
         
     }
     
-    
- 
-      
 
-    
-   // cell.textLabel.text = movie[@"title"];
     
     return cell;  
 }
