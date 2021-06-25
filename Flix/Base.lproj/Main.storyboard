@@ -111,6 +111,9 @@
                                             </subviews>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="137" height="178"/>
+                                        <connections>
+                                            <outlet property="posterView" destination="zn6-1i-R5D" id="nca-BT-PqB"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
