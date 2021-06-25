@@ -51,12 +51,12 @@
     
     self.titleLabel.text = self.movie[@"title"];
     self.synopsisLabel.text = self.movie[@"overview"];
-    
+     
     //adjust text box sizes
     [self.titleLabel sizeToFit];
     [self.synopsisLabel sizeToFit];
 }
-
+ 
  
 /*
 #pragma mark - Navigation
