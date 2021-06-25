@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GridDetailsViewController : UIViewController
+@property (nonatomic, strong) NSDictionary *movie;
 
 @end
 
