@@ -208,11 +208,11 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIV-38-CQ4">
                                         <rect key="frame" x="129" y="206" width="253" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ode-6x-6nc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ode-6x-6nc">
                                         <rect key="frame" x="8" y="305" width="374" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -261,7 +261,7 @@
         <scene sceneID="CxL-bO-wrg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Eco-LK-qKa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Now Playing" id="TMh-SM-MRH"/>
+                    <tabBarItem key="tabBarItem" title="Now Playing" image="now_playing_tabbar_item" id="TMh-SM-MRH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DVC-Xr-ihG">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
@@ -276,11 +276,11 @@
             </objects>
             <point key="canvasLocation" x="70.769230769230774" y="113.74407582938387"/>
         </scene>
-        <!--Item-->
+        <!--Grid-->
         <scene sceneID="MAY-SJ-zNF">
             <objects>
                 <navigationController id="for-7J-I04" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="2rI-Th-hns"/>
+                    <tabBarItem key="tabBarItem" title="Grid" image="reel_tabbar_icon" id="2rI-Th-hns"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZaB-VB-MYE">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -295,6 +295,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="now_playing_tabbar_item" width="21" height="21"/>
+        <image name="reel_tabbar_icon" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
