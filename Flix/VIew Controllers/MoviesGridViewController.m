@@ -124,7 +124,7 @@
     return cell;
 }
 
-    - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView { numberOfItemsInSection:(NSInteger)section {
+- (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.movies.count;
 }
 
