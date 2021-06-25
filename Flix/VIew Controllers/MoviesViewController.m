@@ -184,6 +184,7 @@
     NSDictionary *movie = self.movies[indexPath.row];
     cell.titleLabel.text = movie[@"title"];
     cell.synposisLabel.text = movie[@"overview"];
+    cell.ratingLabel.text = movie[@"vote_average"];
     
     
     //poster view
@@ -197,6 +198,20 @@
         
         cell.posterView.image = nil;
         [cell.posterView setImageWithURL:posterURL];
+        
+    }
+    
+    
+    
+    
+    
+    
+    //rating view
+    
+    if (posterURLString.length != 0) {
+        
+        cell.ratingView.image = nil;
+        [cell.ratingView setImage:<#(UIImage * _Nullable)#>];
         
     }
      
