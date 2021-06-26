@@ -43,11 +43,11 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-![](https://i.imgur.com/8qb1p0e.gif)
+![hippo](https://i.imgur.com/8qb1p0e.gif)
 
 ![](https://i.imgur.com/rwCbfDk.gif)
 
-![](https://i.imgur.com/06tKG08.gif) 
+![hippo](https://i.imgur.com/06tKG08.gif) 
 
 
 ## Notes
