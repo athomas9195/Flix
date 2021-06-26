@@ -1,6 +1,6 @@
 # Project 2 - Flix 
 
-Flix is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+Flix is a movies app created using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
 Time spent: 18 hours spent in total
 
