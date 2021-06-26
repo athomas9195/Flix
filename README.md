@@ -45,11 +45,7 @@ Here's a walkthrough of implemented user stories:
 
 ![](https://i.imgur.com/8qb1p0e.gif)
 
-Here's a walkthrough of implemented user stories:
-
 ![](https://i.imgur.com/rwCbfDk.gif)
-
-Here's a walkthrough of implemented user stories:
 
 ![](https://i.imgur.com/06tKG08.gif) 
 
