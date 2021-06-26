@@ -193,6 +193,17 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swy-3c-OaI" userLabel="Play Trailer">
+                                        <rect key="frame" x="8" y="426" width="374" height="136"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="31"/>
+                                        <state key="normal" title="    Play Trailer" image="iconmonstr-video-2-240">
+                                            <color key="titleColor" red="0.24838811159999999" green="0.39018636940000001" blue="0.52884858850000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="XIE-fQ-3wN" kind="presentation" modalTransitionStyle="coverVertical" id="OzS-4H-SuC"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="6ON-zs-mSd"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="UE5-Lm-ot5"/>
@@ -212,6 +223,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssM-c8-jRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="70.769230769230774" y="1689.8104265402842"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fAu-Lw-hE0">
+            <objects>
+                <viewController id="XIE-fQ-3wN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sKC-tE-dx8">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDN-Ww-jcy">
+                                <rect key="frame" x="16" y="163" width="358" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oUf-Xq-r2O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5kF-Pw-o3Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750.76923076923072" y="2358.7677725118483"/>
         </scene>
         <!--Grid Details View Controller-->
         <scene sceneID="Fu5-WF-ZMG">
@@ -329,6 +366,7 @@
     </scenes>
     <resources>
         <image name="iconmonstr-thumb-17-240.png" width="180" height="180"/>
+        <image name="iconmonstr-video-2-240" width="120" height="120"/>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="reel_tabbar_icon" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
