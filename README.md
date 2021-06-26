@@ -43,7 +43,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-![](https://github.com/athomas9195/Flix/blob/main/Gif%20Flix%20Demo%201.gif)
+![](https://github.com/athomas9195/Flix/blob/main/Flix%20Demo%201%20Gif-min.gif)
 
 ![](https://github.com/athomas9195/Flix/blob/main/Gif%20Flix%20Demo%202.gif)
 
@@ -52,8 +52,6 @@ Here's a walkthrough of implemented user stories:
 
 ## Notes
 
-
-![](https://i.imgur.com/8qb1p0e.gif)
 Flix has been my favorite assignment so far because it has been the most challenging. I thoroughly enojoyed implementing the stretch stories, especially the collection view to details view part because it was a challenge for me. 
 
 ## Credits
