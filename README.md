@@ -2,7 +2,7 @@
 
 Flix is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: 12 hours spent in total
+Time spent: 18 hours spent in total
 
 ## User Stories
 
@@ -18,38 +18,43 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 
-- [ ] User can tap a poster in the collection view to see a detail screen of that movie
+- [x] User can tap a poster in the collection view to see a detail screen of that movie
 - [ ] User can search for a movie.
 - [ ] All images fade in as they are loading.
 - [ ] User can view the large movie poster by tapping on a cell.
 - [ ] For the large poster, load the low resolution image first and then switch to the high resolution image when complete.
 - [ ] Customize the selection effect of the cell.
-- [ ] Customize the navigation bar.
-- [ ] Customize the UI.
+- [x] Customize the navigation bar.
+- [x] Customize the UI.
 - [ ] User can view the app on various device sizes and orientations.
-- [ ] Run your app on a real device.
+- [x] Run your app on a real device.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Shows the movie trailer on a modal pop up. 
+- [x] Shows the viewer approval rating (from 1-10) for each movie in both table view and collection view. 
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. Setting up the modal popup view and retrieving video url. Especially manipulating with the JSON object, an area I struggled with. 
+2. Customizing the restraints further so it can be viewed on other devices. 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-Will insert soon. 
+![](https://i.imgur.com/8qb1p0e.gif)
 
-GIF created with [Kap](https://getkap.co/).
+![](https://i.imgur.com/rwCbfDk.gif)
+
+
+![](https://i.imgur.com/06tKG08.gif)
+
+
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Flix has been my favorite assignment so far because it has been the most challenging. I thoroughly enojoyed implementing the stretch stories, especially the collection view to details view part because it was a challenge for me. 
 
 ## Credits
 
