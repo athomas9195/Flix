@@ -203,7 +203,7 @@
                                             <color key="titleShadowColor" red="0.24838811159999999" green="0.39018636940000001" blue="0.52884858850000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <segue destination="XIE-fQ-3wN" kind="presentation" identifier="trailerSegue" modalTransitionStyle="coverVertical" id="OzS-4H-SuC"/>
+                                            <segue destination="XIE-fQ-3wN" kind="presentation" id="Fjh-nO-Ar6"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -220,16 +220,17 @@
                         <outlet property="posterView" destination="1Ma-Bu-LkA" id="IV9-zh-Yvk"/>
                         <outlet property="synopsisLabel" destination="BiR-sa-SWc" id="Osc-A3-TTX"/>
                         <outlet property="titleLabel" destination="Zyt-TW-jYD" id="reX-8j-RNQ"/>
+                        <outlet property="trailerButton" destination="swy-3c-OaI" id="BSK-5D-eeG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssM-c8-jRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="70.769230769230774" y="1689.8104265402842"/>
         </scene>
-        <!--View Controller-->
+        <!--Trailer View Controller-->
         <scene sceneID="fAu-Lw-hE0">
             <objects>
-                <viewController id="XIE-fQ-3wN" sceneMemberID="viewController">
+                <viewController id="XIE-fQ-3wN" customClass="TrailerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sKC-tE-dx8">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -247,10 +248,13 @@
                         <viewLayoutGuide key="safeArea" id="oUf-Xq-r2O"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="trailerWebView" destination="TDN-Ww-jcy" id="AX8-M3-4Zh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5kF-Pw-o3Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750.76923076923072" y="2358.7677725118483"/>
+            <point key="canvasLocation" x="71" y="2443"/>
         </scene>
         <!--Grid Details View Controller-->
         <scene sceneID="Fu5-WF-ZMG">
