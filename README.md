@@ -43,11 +43,11 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-![hippo](https://i.imgur.com/8qb1p0e.gif)
+![](https://github.com/athomas9195/Flix/blob/main/Gif%20Flix%20Demo%201.gif)
 
-![](https://i.imgur.com/rwCbfDk.gif)
+![](https://github.com/athomas9195/Flix/blob/main/Gif%20Flix%20Demo%202.gif)
 
-![hippo](https://i.imgur.com/06tKG08.gif) 
+![](https://github.com/athomas9195/Flix/blob/main/Gif%20Flix%20Demo%203.gif) 
 
 
 ## Notes
