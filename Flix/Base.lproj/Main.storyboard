@@ -194,14 +194,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swy-3c-OaI" userLabel="Play Trailer">
-                                        <rect key="frame" x="8" y="426" width="374" height="136"/>
+                                        <rect key="frame" x="8" y="426" width="374" height="202"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="31"/>
-                                        <state key="normal" title="    Play Trailer" image="iconmonstr-video-2-240">
+                                        <state key="normal" image="iconmonstr-video-2-240">
                                             <color key="titleColor" red="0.24838811159999999" green="0.39018636940000001" blue="0.52884858850000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleShadowColor" red="0.24838811159999999" green="0.39018636940000001" blue="0.52884858850000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <segue destination="XIE-fQ-3wN" kind="presentation" modalTransitionStyle="coverVertical" id="OzS-4H-SuC"/>
+                                            <segue destination="XIE-fQ-3wN" kind="presentation" identifier="trailerSegue" modalTransitionStyle="coverVertical" id="OzS-4H-SuC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -366,9 +368,12 @@
     </scenes>
     <resources>
         <image name="iconmonstr-thumb-17-240.png" width="180" height="180"/>
-        <image name="iconmonstr-video-2-240" width="120" height="120"/>
+        <image name="iconmonstr-video-2-240" width="80" height="80"/>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="reel_tabbar_icon" width="25" height="25"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
