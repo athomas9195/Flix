@@ -18,6 +18,7 @@
 		0B51C3B12686A87600651F02 /* iconmonstr-video-2-240 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 0B51C3B02686A87600651F02 /* iconmonstr-video-2-240 (1).png */; };
 		0B51C3B42686AAF600651F02 /* TrailerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B51C3B32686AAF600651F02 /* TrailerViewController.m */; };
 		0B51C3B62686C11E00651F02 /* iconmonstr-thumb-17-240 (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 0B51C3B52686C11E00651F02 /* iconmonstr-thumb-17-240 (2).png */; };
+		0B51C3B82686C25600651F02 /* Screen Shot 2021-06-25 at 7.02.51 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B51C3B72686C25600651F02 /* Screen Shot 2021-06-25 at 7.02.51 PM.png */; };
 		0BABE7922683A0F10064F87D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABE7912683A0F10064F87D /* AppDelegate.m */; };
 		0BABE7952683A0F10064F87D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABE7942683A0F10064F87D /* SceneDelegate.m */; };
 		0BABE79B2683A0F10064F87D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BABE7992683A0F10064F87D /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 		0B51C3B22686AAF600651F02 /* TrailerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailerViewController.h; sourceTree = "<group>"; };
 		0B51C3B32686AAF600651F02 /* TrailerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailerViewController.m; sourceTree = "<group>"; };
 		0B51C3B52686C11E00651F02 /* iconmonstr-thumb-17-240 (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iconmonstr-thumb-17-240 (2).png"; path = "../../../../Downloads/iconmonstr-thumb-17-240 (2).png"; sourceTree = "<group>"; };
+		0B51C3B72686C25600651F02 /* Screen Shot 2021-06-25 at 7.02.51 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2021-06-25 at 7.02.51 PM.png"; path = "../../../../../../var/folders/rh/9ffckfqn3vg92mv77gjtsl080000gn/T/TemporaryItems/NSIRD_screencaptureui_0b44To/Screen Shot 2021-06-25 at 7.02.51 PM.png"; sourceTree = "<group>"; };
 		0BABE78D2683A0F10064F87D /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BABE7902683A0F10064F87D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0BABE7912683A0F10064F87D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				0BABE7942683A0F10064F87D /* SceneDelegate.m */,
 				0BABE7992683A0F10064F87D /* Main.storyboard */,
 				0BABE79C2683A0F30064F87D /* Assets.xcassets */,
+				0B51C3B72686C25600651F02 /* Screen Shot 2021-06-25 at 7.02.51 PM.png */,
 				0B51C3B52686C11E00651F02 /* iconmonstr-thumb-17-240 (2).png */,
 				0B51C3B02686A87600651F02 /* iconmonstr-video-2-240 (1).png */,
 				0B51C3AE2686A71C00651F02 /* iconmonstr-video-2-240.png */,
@@ -360,6 +363,7 @@
 				0BABE79B2683A0F10064F87D /* Main.storyboard in Resources */,
 				0B51C3A9268692BA00651F02 /* iconmonstr-thumb-17-240.png in Resources */,
 				0B51C3B62686C11E00651F02 /* iconmonstr-thumb-17-240 (2).png in Resources */,
+				0B51C3B82686C25600651F02 /* Screen Shot 2021-06-25 at 7.02.51 PM.png in Resources */,
 				0B51C3AF2686A71C00651F02 /* iconmonstr-video-2-240.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
