@@ -34,7 +34,7 @@
     
     
     
-    
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
     
     [self.view bringSubviewToFront:self.activityIndicator];
     [self.activityIndicator startAnimating];
